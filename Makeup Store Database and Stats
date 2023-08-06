@@ -1,0 +1,23 @@
+--Create a makeup store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER);
+
+INSERT INTO store VALUES (1, "mascara", 5);
+INSERT INTO store VALUES (2, "eyeliner", 4);
+INSERT INTO store VALUES (3, "blush", 7);
+INSERT INTO store VALUES (4, "lip gloss", 8);
+INSERT INTO store VALUES (5, "powder", 10);
+INSERT INTO store VALUES (6, "lip liner", 3);
+INSERT INTO store VALUES (7, "bronzer", 7);
+INSERT INTO store VALUES (8, "contour", 9);
+INSERT INTO store VALUES (9, "eyeshadow", 4);
+INSERT INTO store VALUES (10, "setting spray", 6);
+INSERT INTO store VALUES (11, "eyebrow pen", 2);
+INSERT INTO store VALUES (12, "setting spray", 10);
+INSERT INTO store VALUES (13, "foundation", 20);
+INSERT INTO store VALUES (14, "concealer", 15);
+INSERT INTO store VALUES (15, "lip stick", 9);
+
+--display the database ordered by price.
+SELECT * FROM store 
+ORDER BY price desc;
